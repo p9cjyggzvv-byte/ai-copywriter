@@ -86,9 +86,7 @@ else:
     projects = []
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
-        names = st.text_area("项目名称（每行一个）", "手工皮具钱包
-AI写作助手
-手冲咖啡豆订阅", height=150)
+        names = st.text_area("项目名称（每行一个）", "手工皮具钱包\nAI写作助手\n手冲咖啡豆订阅", height=150)
     with col2:
         styles = st.text_area("风格（每行一个）", "", height=150, placeholder="留空则使用默认风格")
     with col3:
@@ -98,16 +96,11 @@ AI写作助手
     with col5:
         tones = st.text_area("语气（每行一个）", "", height=150)
 
-    lines = names.strip().split("
-") if names.strip() else []
-    s_lines = styles.strip().split("
-") if styles.strip() else []
-    a_lines = audiences.strip().split("
-") if audiences.strip() else []
-    sell_lines = sellings.strip().split("
-") if sellings.strip() else []
-    t_lines = tones.strip().split("
-") if tones.strip() else []
+    lines = names.strip().split("\n") if names.strip() else []
+    s_lines = styles.strip().split("\n") if styles.strip() else []
+    a_lines = audiences.strip().split("\n") if audiences.strip() else []
+    sell_lines = sellings.strip().split("\n") if sellings.strip() else []
+    t_lines = tones.strip().split("\n") if tones.strip() else []
 
     for i, name in enumerate(lines):
         projects.append({
