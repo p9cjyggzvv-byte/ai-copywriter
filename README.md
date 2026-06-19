@@ -1,5 +1,7 @@
 # 🤖 AI 文案工具集
 
+[![在线体验](https://img.shields.io/badge/%F0%9F%9A%80-%E5%9C%A8%E7%BA%BF%E4%BD%93%E9%AA%8C-2563eb?style=for-the-badge)](https://ai-copywriter-production-0cfd.up.railway.app)
+
 一套基于 DeepSeek API 的 AI 内容生成工具集，支持文案生成、批量处理、一文多发、知识库问答、AI Agent。
 
 ## 功能
@@ -18,7 +20,7 @@
 
 ```bash
 # 1. 克隆
-git clone https://github.com/你的用户名/ai-copywriter.git
+git clone https://github.com/p9cjyggzvv-byte/ai-copywriter.git
 cd ai-copywriter
 
 # 2. 安装依赖
